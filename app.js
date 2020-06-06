@@ -34,6 +34,7 @@ app.get("/pricing", function(req, res){
 	// body...
 	res.render("pricing")
 })
-app.listen(3000,function(){
+const port = process.env.port || 3000;
+app.listen(port,function(){
 	console.log("BM Web Design running");
 });
