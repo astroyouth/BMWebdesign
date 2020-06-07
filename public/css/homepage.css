@@ -181,19 +181,72 @@ section p{
 #square4{
     background-color: #4186e7;
 }
+#Modal1 .modal-content{
+    background-color: rgba(25, 121, 255, 0.9);
+    font-size: 75%;
+}
+#Modal1 p{
+    font-size: 120%;
+    font-weight: bold;
+}
+#Modal2 .modal-content{
+    background-color: rgba(144, 185, 243, 0.9);
+    font-size: 75%;
+}
+#Modal2 p{
+    font-size: 120%;
+    font-weight: bold;
+}
+#Modal3 .modal-content{
+    background-color: rgba(127, 177, 247, 0.9);
+    font-size: 75%;
+}
+#Modal3 p{
+    font-size: 120%;
+    font-weight: bold;
+}
+#Modal4 .modal-content{
+    background-color: rgb(65, 134, 231, 0.9);
+    font-size: 75%;
+}
+#Modal4 p{
+    font-size: 120%;
+    font-weight: bold;
+}
 table {
     opacity: 1;
     transform: none;
     visibility: visible;
     table-layout: fixed ;
     width: 100% ;
-  }
-  td {
+}
+td {
     width: 50% ;
-  }
-  dt{
+}
+dt{
       text-decoration: underline;
+}
+#portfolio .card{
+    background-color: #7fb1f7;
+}
+#astroexp .card-body{
+    background-image: URL("https://static.wixstatic.com/media/382656_c4135011dd5341d0b0bf14ee95c99860~mv2_d_3011_3000_s_4_2.jpg/v1/fill/w_470,h_468,al_c,q_80,usm_0.66_1.00_0.01/astronaut-astronomy-cosmos-2152.webp");
+}
+#astroexp .card-body:hover{
+    background-image: none;
+}
+#efakt .card-body{
+    background-image: URL("https://images.unsplash.com/photo-1564144573017-8dc932e0039e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80");
   }
+#efakt .card-body:hover{
+    background-image: none;
+}
+#bmwd .card-body{
+    background-image: URL("https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1002&q=80");
+}
+#bmwd .card-body:hover{
+  background-image: none;
+}
 footer {
     position: flex;
     width: 100%;
