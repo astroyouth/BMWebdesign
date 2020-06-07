@@ -33,12 +33,31 @@
     height: 60px;
     background: #1979ff;
 }
+/* and this styles the dropdwon trigger link, when open */
+.navbar-dark .navbar-nav a { 
+    color: black;
+  }
 @media (max-width:767px) {
     .navbar-nav .open .dropdown-menu {
       background-color:#1979ff;
-      
+    }
+    #bmlogo{
+        display: none;
+    }
+    .cardimg{
+        width: 300px;
     }
   }
+@media (max-width:1200px){
+    .col-md-3{
+        font-size: 80%;
+    }
+}
+@media(max-width:450px){
+    table{
+        width: 1vw;
+    }
+}
 .logo{
     width: 200px;
 }
@@ -81,22 +100,14 @@ section {
 section h1 {
     font-size: 4rem;
   }
-
-@media (max-width:767px) {
-    .cardimg{
-        width: 50%;
-    }
-}
-@media (max-width:1200px) {
-    .col-md-3{
-        font-size: 80%;
-    }
-}
-.cardimg{
+  .cardimg{
     width: 600px;
     display: flex;
     margin: 0 auto;
 }
+
+
+
 .card-img-top{
     margin-top: 15px;
 }
@@ -220,6 +231,7 @@ table {
     table-layout: fixed ;
     width: 100% ;
 }
+
 td {
     width: 50% ;
 }
@@ -247,6 +259,7 @@ dt{
 #bmwd .card-body:hover{
   background-image: none;
 }
+
 footer {
     position: flex;
     width: 100%;
@@ -260,7 +273,7 @@ footer {
 .footer{
     background-color: #1979ff;
     margin: 0;
-    height: 250px;
+    bottom:0;
 }
 .footer ul li a{
     color: black;
