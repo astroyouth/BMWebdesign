@@ -1,10 +1,10 @@
 var express = require("express");
 var app = express();
 var request = require("request")
-const path = require('path')
+path = require('path')
 app.set("view engine", "ejs")
+app.use(express.static(__dirname + '/public'));
 // app.use(express.static(path.join(__dirname + '/public')));
-
 app.get("/", function(req, res){
 	// body...
 	res.render("index")
