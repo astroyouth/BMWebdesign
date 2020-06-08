@@ -78,9 +78,7 @@ hr{
     height: 3px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
-.container{
-    margin-bottom: 300px;
-}
+
 i{
     font-size: 48px;
 }
@@ -260,6 +258,14 @@ dt{
     font-weight: bold;
 }
 
+#about{
+    padding: 50px;
+    font-size: 16px;
+}
+#about img{
+    width: 100%;
+    border-radius: 15px;
+}
 footer {
     position: flex;
     width: 100%;
@@ -288,7 +294,10 @@ footer {
 .footer .container{
     margin-bottom: 0;
 }
-
+#logo404{
+    filter: grayscale(100%);
+    width: 30%;
+}
 
 .legal{
     padding: 50px;
