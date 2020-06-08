@@ -288,3 +288,9 @@ footer {
 .footer .container{
     margin-bottom: 0;
 }
+
+
+.legal{
+    padding: 50px;
+    margin: 50px;
+}
