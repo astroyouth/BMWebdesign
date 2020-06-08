@@ -34,6 +34,16 @@ app.get("/pricing", function(req, res){
 	// body...
 	res.render("pricing")
 })
+app.get("/legal", function(req, res){
+	// body...
+	res.render("legal")
+})
+
+app.get("/*", function(req, res){
+	// body...
+	res.render("404")
+})
+
 const port = process.env.port || 8081;
 app.listen(port,function(){
 	console.log("BM Web Design running");
