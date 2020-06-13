@@ -5,20 +5,13 @@
 
 .body{
     font-family: 'Roboto', sans-serif;
-    background-color: rgba(0,0,0,0);
-    color:  #07062b;
+    background-color: rgb(0,0,0);
+    color:  #black;
     line-height: 1.6;
     height: 100vh;
     transition: 1s;
 }
-#myCanvas{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    z-index:-1;
-}
+
 .navContainer {
     width: 100%;
     height: 80px;
@@ -31,7 +24,7 @@
     display: flex;
     width: 100%;
     height: 60px;
-    background: #1979ff;
+    background: black;
 }
 /* and this styles the dropdwon trigger link, when open */
 .navbar-dark .navbar-nav a { 
@@ -279,19 +272,19 @@ footer {
     z-index:-1;
 }
 .footer{
-    background-color: #1979ff;
+    background-color: #black;
     margin: 0;
     bottom:0;
 }
 .footer ul li a{
-    color: black;
+    color: white;
     font-weight: bold;
 }
 #footerLinks{
     font-size: 110%;
 }
 #mc_embed_signup{
-    background:#1979ff; clear:left;
+    background:#black; clear:left;
 }
 .footer .container{
     margin-bottom: 0;
