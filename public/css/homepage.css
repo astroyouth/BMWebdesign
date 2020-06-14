@@ -6,7 +6,7 @@
 .body{
     font-family: 'Roboto', sans-serif;
     background-color: rgb(0,0,0);
-    color:  #black;
+    color:  #63707c;
     line-height: 1.6;
     height: 100vh;
     transition: 1s;
@@ -272,7 +272,7 @@ footer {
     z-index:-1;
 }
 .footer{
-    background-color: #black;
+    background-color: black;
     margin: 0;
     bottom:0;
 }
@@ -284,7 +284,7 @@ footer {
     font-size: 110%;
 }
 #mc_embed_signup{
-    background:#black; clear:left;
+    background:black; clear:left;
 }
 .footer .container{
     margin-bottom: 0;
