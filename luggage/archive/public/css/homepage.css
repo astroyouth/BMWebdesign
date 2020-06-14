@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+.body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0,0,0,0);
+    color:  #07062b;
+    line-height: 1.6;
+    height: 100vh;
+    transition: 1s;
+}
+#myCanvas{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+.navContainer {
+    width: 100%;
+    height: 80px;
+    /* css smooth */
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: #1979ff;
+}
+/* and this styles the dropdwon trigger link, when open */
+.navbar-dark .navbar-nav a { 
+    color: black;
+  }
+@media (max-width:767px) {
+    .navbar-nav .open .dropdown-menu {
+      background-color:#1979ff;
+    }
+    #bmlogo{
+        display: none;
+    }
+    .cardimg{
+        width: 300px;
+    }
+  }
+@media (max-width:1200px){
+    .col-md-3{
+        font-size: 80%;
+    }
+}
+@media(max-width:450px){
+    table{
+        width: 1vw;
+    }
+}
+.logo{
+    width: 200px;
+}
+.phone{
+    background-color: white;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 100%;
+    margin-right: 30px;
+    /* padding-right:5px;
+    padding-left: 5px; */
+}
+#indexp{
+    font-weight: bold;
+}
+hr{
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.container{
+    margin-bottom: 200px;
+}
+i{
+    font-size: 48px;
+}
+.table{
+    margin: 0 auto;
+}
+section {
+    margin-bottom: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    /* height: 100vh; */
+  }
+section h1 {
+    font-size: 4rem;
+  }
+  .cardimg{
+    width: 600px;
+    display: flex;
+    margin: 0 auto;
+}
+
+
+
+.card-img-top{
+    margin-top: 15px;
+}
+.card-img-top:hover{
+    margin-top: 10px;
+    transition: 700ms;
+}
+section p{
+    font-size: 1.5rem;
+}
+.card-body p{
+    font-size: 100%;
+}
+.card{
+    background-color: rgba(225,225,225,0.5);
+}
+.tab-pane{
+    background-color: dimgrey;
+    height: auto;
+    transition: 1s;
+    padding-bottom: 20px;
+}
+
+.imgthumbnail{
+    max-width: 80%;
+    max-height: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: solid 1px white;
+    background-color: dimgrey;
+    padding: .75rem; 
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    /* max-width: 100%; */
+    height: auto;
+}
+
+.nav-link.active a {
+    background-color:none !important;
+    border: 0 !important;
+  
+  }
+.nav-item{
+    color: dimgrey;
+}
+.col-lg-6 h3{
+    padding-top: 50px;
+    font-weight: 900;
+}
+.col-lg-6 p{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#servicesOffered{
+    margin-bottom: 200px;
+}
+#serviceButton{
+    margin-top: 20px;
+}
+#pricingContainer{
+    padding-top: 0px;
+    padding-bottom: 100px;
+}
+#services{
+    margin-bottom: 50px;
+}
+
+.thumb1 { 
+    width: 100%;
+    height: 250px;
+  }
+#square1{
+    background-color: #1979ff;
+}
+#square2{
+    background-color: #90b9f3;
+}
+#square3{
+    background-color: #7fb1f7;
+}
+#square4{
+    background-color: #4186e7;
+}
+#Modal1 .modal-content{
+    background-color: rgba(25, 121, 255, 0.9);
+    font-size: 75%;
+}
+#Modal1 p{
+    font-size: 120%;
+    font-weight: bold;
+}
+#Modal2 .modal-content{
+    background-color: rgba(144, 185, 243, 0.9);
+    font-size: 75%;
+}
+#Modal2 p{
+    font-size: 120%;
+    font-weight: bold;
+}
+#Modal3 .modal-content{
+    background-color: rgba(127, 177, 247, 0.9);
+    font-size: 75%;
+}
+#Modal3 p{
+    font-size: 120%;
+    font-weight: bold;
+}
+#Modal4 .modal-content{
+    background-color: rgb(65, 134, 231, 0.9);
+    font-size: 75%;
+}
+#Modal4 p{
+    font-size: 120%;
+    font-weight: bold;
+}
+table {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+    table-layout: fixed ;
+    width: 100% ;
+}
+
+td {
+    width: 50% ;
+}
+dt{
+      text-decoration: underline;
+}
+#portfolio .card{
+    background-color: #7fb1f7;
+}
+#astroexp .card-body{
+    background-image: URL("https://static.wixstatic.com/media/382656_c4135011dd5341d0b0bf14ee95c99860~mv2_d_3011_3000_s_4_2.jpg/v1/fill/w_470,h_468,al_c,q_80,usm_0.66_1.00_0.01/astronaut-astronomy-cosmos-2152.webp");
+    background-color: #7fb1f7;
+    background-blend-mode: screen;
+    font-weight: bold;
+}
+
+#efakt .card-body{
+    background-image: URL("https://images.unsplash.com/photo-1564144573017-8dc932e0039e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80");
+    background-color: #7fb1f7;
+    background-blend-mode: screen;
+    font-weight: bold;
+}
+#bmwd .card-body{
+    background-image: URL("https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1002&q=80");
+    background-color: #7fb1f7;
+    background-blend-mode: screen;
+    font-weight: bold;
+}
+
+#about{
+    padding: 50px;
+    font-size: 16px;
+}
+#about img{
+    width: 100%;
+    border-radius: 15px;
+}
+footer {
+    position: flex;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    overflow: hidden;
+  }
+.footerCredit{
+    z-index:-1;
+}
+.footer{
+    background-color: #1979ff;
+    margin: 0;
+    bottom:0;
+}
+.footer ul li a{
+    color: black;
+    font-weight: bold;
+}
+#footerLinks{
+    font-size: 110%;
+}
+#mc_embed_signup{
+    background:#1979ff; clear:left;
+}
+.footer .container{
+    margin-bottom: 0;
+}
+#logo404{
+    filter: grayscale(100%);
+    width: 30%;
+}
+
+.legal{
+    padding: 50px;
+    margin: 50px;
+}
