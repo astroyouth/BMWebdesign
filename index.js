@@ -83,7 +83,7 @@ app.get("/*", function(req, res){
 	res.render("404")
 })
 
-const port = process.env.port || 8081;
+const port = 443 ||process.env.port || 8081;
 app.listen(port,function(){
 	console.log("BM Web Design running");
 });
