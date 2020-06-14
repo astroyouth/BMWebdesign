@@ -99,7 +99,7 @@ section h1 {
     margin: 0 auto;
 }
 #index .card-body{
-    color: dimgrey;
+    color: #212529;
 }
 
 
@@ -120,7 +120,8 @@ section p{
     background-color: rgba(225,225,225,0.5);
 }
 .tab-pane{
-    background-color: dimgrey;
+    background-color: black;
+    color: #63707c;
     height: auto;
     transition: 1s;
     padding-bottom: 20px;
@@ -185,7 +186,6 @@ section p{
 }
 #square4{
     background-color: #4186e7;
-}
 #Modal1 .modal-content{
     background-color: rgba(25, 121, 255, 0.9);
     font-size: 75%;
