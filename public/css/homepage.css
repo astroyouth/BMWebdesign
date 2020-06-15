@@ -226,6 +226,7 @@ table {
     visibility: visible;
     table-layout: fixed ;
     width: 100% ;
+    color: white;
 }
 
 td {
