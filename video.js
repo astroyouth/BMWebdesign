@@ -5,11 +5,11 @@ var fs = require("fs"),
     path = require("path");
 
 http.createServer(function (req, res) {
-  if (req.url != "/logo6.mp4") {
+  if (req.url != "/logo7.mp4") {
     res.writeHead(200, { "Content-Type": "text/html" });
-    res.end('<video src="http://localhost:8888/logo6.mp4" controls></video>');
+    res.end('<video src="http://localhost:8888/logo7.mp4" controls></video>');
   } else {
-    var file = path.resolve(__dirname,"logo6.mp4");
+    var file = path.resolve(__dirname,"logo7.mp4");
     fs.stat(file, function(err, stats) {
       if (err) {
         if (err.code === 'ENOENT') {
