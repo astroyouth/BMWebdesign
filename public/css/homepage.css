@@ -147,7 +147,8 @@ section p{
   
   }
 .nav-item{
-    color: dimgrey;
+    color:  #eaebec;
+    font-weight: bold;
 }
 .col-lg-6 h3{
     padding-top: 50px;
