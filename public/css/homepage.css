@@ -191,6 +191,7 @@ section p{
 #Modal1 .modal-content{
     background-color: rgba(25, 121, 255, 0.9);
     font-size: 75%;
+    color: black;
 }
 #Modal1 p{
     font-size: 120%;
@@ -199,6 +200,7 @@ section p{
 #Modal2 .modal-content{
     background-color: rgba(144, 185, 243, 0.9);
     font-size: 75%;
+    color: black;
 }
 #Modal2 p{
     font-size: 120%;
@@ -207,6 +209,7 @@ section p{
 #Modal3 .modal-content{
     background-color: rgba(127, 177, 247, 0.9);
     font-size: 75%;
+    color: black;
 }
 #Modal3 p{
     font-size: 120%;
@@ -215,6 +218,7 @@ section p{
 #Modal4 .modal-content{
     background-color: rgb(65, 134, 231, 0.9);
     font-size: 75%;
+    color: black;
 }
 #Modal4 p{
     font-size: 120%;
