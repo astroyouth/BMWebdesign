@@ -1,11 +1,13 @@
 var express = require("express");
 var app = express();
 var request = require("request")
+var video = require('./video')
 path = require('path')
 app.set("view engine", "ejs")
 app.use(express.static(__dirname + '/public'));
 // app.use(express.static(path.join(__dirname + '/public')));
 
+video();
 const { SitemapStream, streamToPromise } = require('sitemap')
 const { createGzip } = require('zlib')
  
