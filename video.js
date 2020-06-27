@@ -1,43 +1,39 @@
-// Declare Vars & Read Files
+var http = require('http'),
+    fs = require('fs'),
+    util = require('util');
 
-var fs = require('fs'),
-    http = require('http'),
-    url = require('url'),
-    path = require('path');
-var movie_webm, movie_mp4, movie_ogg;
-// ... [snip] ... (Read index page)
-fs.readFile(path.resolve(__dirname,"logo7.mp4"), function (err, data) {
-    if (err) {
-        throw err;
-    }
-    movie_mp4 = data;
-});
-// ... [snip] ... (Read two other formats for the video)
+var path = "/logo7.mp4";
 
-// Serve & Stream Video
+var port = 8888;
+var host = "localhost";
 
 http.createServer(function (req, res) {
-    // ... [snip] ... (Serve client files)
-    var total;
-    if (reqResource == "/logo7.mp4") {
-        total = movie_mp4.length;
-    }
-    // ... [snip] ... handle two other formats for the video
+
+  var stat = fs.statSync(path);
+  var total = stat.size;
+
+  if (req.headers.range) {   // meaning client (browser) has moved the forward/back slider
+                                         // which has sent this request back to this server logic ... cool
     var range = req.headers.range;
-    var positions = range.replace(/bytes=/, "").split("-");
-    var start = parseInt(positions[0], 10);
-    var end = positions[1] ? parseInt(positions[1], 10) : total - 1;
-    var chunksize = (end - start) + 1;
-    if (reqResource == "/logo7.mp4") {
-        res.writeHead(206, {
-            "Content-Range": "bytes " + start + "-" + end + "/" + total,
-                "Accept-Ranges": "bytes",
-                "Content-Length": chunksize,
-                "Content-Type": "video/mp4"
-        });
-        res.end(movie_mp4.slice(start, end + 1), "binary");
-    }
-    // ... [snip] ... handle two other formats for the video
-}).listen(8888, function(){
-  console.log("Video Server Is Running")
-});
+    var parts = range.replace(/bytes=/, "").split("-");
+    var partialstart = parts[0];
+    var partialend = parts[1];
+
+    var start = parseInt(partialstart, 10);
+    var end = partialend ? parseInt(partialend, 10) : total-1;
+    var chunksize = (end-start)+1;
+    console.log('RANGE: ' + start + ' - ' + end + ' = ' + chunksize);
+
+    var file = fs.createReadStream(path, {start: start, end: end});
+    res.writeHead(206, { 'Content-Range': 'bytes ' + start + '-' + end + '/' + total, 'Accept-Ranges': 'bytes', 'Content-Length': chunksize, 'Content-Type': 'video/mp4' });
+    file.pipe(res);
+
+  } else {
+
+    console.log('ALL: ' + total);
+    res.writeHead(200, { 'Content-Length': total, 'Content-Type': 'video/mp4' });
+    fs.createReadStream(path).pipe(res);
+  }
+}).listen(port, host);
+
+console.log("Server running at http://" + host + ":" + port + "/");
