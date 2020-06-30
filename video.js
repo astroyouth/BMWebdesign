@@ -44,6 +44,6 @@ http.createServer(function (req, res) {
         });
     });
   } 
-}).listen(8888, function(){
+}).listen(8080, function(){
 	console.log("video server running");
 });
